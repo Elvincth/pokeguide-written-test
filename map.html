@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Pokeguide</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+HK:300,400,500,700">
+  <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+  <link rel="stylesheet" href="assets/css/map.css">
+  <link rel="stylesheet" href="assets/css/gobal.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-light navbar-expand-md map-header"
+    style="padding-top: 0px;top: 0;position: fixed;width: 100%;">
+    <div class="container-fluid">
+      <img class="img-fluid header-logo " src="https://i.imgur.com/vkPdSV5.png">
+  </nav>
+  <!--BAck button-->
+  <a class="map-back-btn" href="index.html" target="_self"><i class="fas fa-chevron-left"></i></a>
+
+  <!--Map-->
+  <iframe id="#map" class="map" f rameborder="0" style="border:0"
+    src="https://www.google.com/maps/embed/v1/view?zoom=10&center=22.3193%2C114.1694&key=AIzaSyBo3ikeE352p09qhTjPmAJhYq4kck4qfCo"
+    allowfullscreen>
+  </iframe>
+
+
+  <!--Info Panel-->
+
+  <div class="map-panel">
+    <!--Panel Bar (For resizing)-->
+    <hr id="map-panel-bar" class="map-panel-bar">
+
+    <!--START OF Map panel display info div-->
+    <div id="map-panel">
+
+
+      <!--Map info row-->
+      <div class="map-panel-info-container row">
+
+        <div class="map-route-line-conatiner col-1">
+          <div class="route-circle-large"></div>
+          <div class="route-line-dashed"></div>
+        </div>
+
+        <div class="map-place-title-conatiner col-10">
+
+          <div>
+            <!--Start place name-->
+            <div class="map-place-title">
+              <snap>Loading</snap>
+            </div>
+            <!--END OF Start place name-->
+
+            <!--Map transport info-->
+            <div class="map-transport-info">
+
+
+              <i class="fas fa-walking map-icon-walk"></i>
+
+              <!--Transport info tag-->
+              <div class="map-badge-container map-distance-badge">
+                <i class="fas fa-map-marked-alt"></i>
+                Loading
+              </div>
+
+              <!--AR tag-->
+              <div class="map-badge-container map-ar-badge">
+                AR<sup>.</sup>
+              </div>
+            </div>
+
+
+          </div>
+          <!--END OF Map transport info-->
+
+        </div>
+
+      </div>
+      <!--END of Map info row-->
+
+
+      <!--Map info row second-->
+
+      <div class="map-panel-info-container row">
+
+        <div class="map-route-line-conatiner col-1">
+          <div class="route-circle-large" style="border-color:red;"></div>
+          <div class="route-line-solid" style="border-color:red;"></div>
+          <div class="route-circle-large" style="border-color:red;"></div>
+        </div>
+
+        <div class="map-place-title-conatiner col-10">
+
+          <div>
+            <!--Start place name-->
+            <div class="map-place-title">
+              <snap>Loading</snap>
+            </div>
+
+            <!--END OF Start place name-->
+
+            <!--Map transport info-->
+            <div class="map-transport-info">
+              <i class="fas fa-bus map-icon-bus" style="color:red;"></i>
+
+              <div class="map-transport-info-inner">
+                <span class="transport-num-badge" style="border-color:#DEB3BA;">Loading </span> <br>
+                <snap class="transport-type-txt">Loading</snap>
+              </div>
+
+              <!--Transport info - number and schedule-->
+              <div>
+
+              </div>
+
+            </div>
+
+            <div class="map-place-title">
+              <snap>Loading</snap>
+            </div>
+          </div>
+          <!--END OF Map transport info-->
+        </div>
+        <!--END OF Map display info div-->
+
+      </div>
+
+    </div>
+    <!--END of Map info row-->
+
+  </div>
+  <!--All lib scripts-->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+  <!--Google map script-->
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApjWZ0WK9RLDMW9unh_UOyUtzSRzQlG6k&callback=initMap">
+  </script>
+
+  <!--My scripts-->
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/gobal.js"></script>
+  <script src="assets/js/element.js"></script>
+  <script src="assets/js/map.js"></script>
+
+
+</body>
+
+</html>

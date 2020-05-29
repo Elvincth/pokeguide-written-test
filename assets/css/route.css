@@ -1,0 +1,109 @@
+/*Header part*/
+.header {
+  background-color: #FCB92D;
+}
+
+/*Input part*/
+
+.input-container {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.input-txt {
+  font-weight: 500 !important;
+}
+
+.input-group-text {
+  background-color: rgb(255, 255, 255)!important;
+  padding-left: 20px!important;
+  font-weight: 500!important;
+}
+
+/*Input end style*/
+.input-group-end{
+  padding-bottom: 10px;padding-top: 10px;
+}
+
+/*Route part*/
+.route-container {
+  border-radius: 10px;
+  border: 1.5px solid rgb(238, 238, 238);
+  padding: 20px;
+  padding-left: 5px;
+  padding-right: 10px;
+  padding-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: flex;
+}
+
+/* Contain the transport infromation */
+
+/* hide scroll bar */
+
+.route-item-parent-container {
+  width: 100%;
+  padding-top: 10px;
+}
+
+.route-item-container::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.route-item-container {
+  overflow: -moz-scrollbars-none;
+}
+
+.route-item-container {
+  display: inline-flex;
+}
+
+.route-item-container:hover {
+  cursor: pointer;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  border: 3px solid transparent;
+}
+
+.route-icon-container {
+  overflow-y: hidden;
+  max-width: 90%;
+  max-height: 35px;
+  display: flex;
+}
+
+.bus-badge {
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1.5px solid rgb(238, 238, 238);
+  font-weight: 500 !important;
+}
+
+.route-item-icon {
+  padding-left: 13px;
+}
+
+.route-item-arrow {
+  padding-left: 6px;
+  margin-top: 5px;
+}
+
+.route-time-container {
+  width: auto;
+  padding-left: 3px;
+  white-space: nowrap !important;
+  font-weight: 500 !important;
+  text-align: right !important;
+  font-size: 18px;
+  line-height: 15px;
+}
+
+/* Price text styling */
+
+.route-price-txt {
+  color: gray;
+  margin-top: 10px;
+  font-size: 13px;
+}
